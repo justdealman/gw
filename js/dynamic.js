@@ -71,4 +71,5 @@
 	$('.review .benefits > div > div:nth-child(2n) img').css({'float': 'right', 'margin': '-18px -517px 16px 0'});
 	$('.news ul li:last-child').css({'font-size': '13px', 'margin': '1px 0 0 6px'});
 	$('.news ul li:last-child a').css({'color': '#9c9da0'});
+	$('.news  > div > div  > div:nth-child(2n+1)').css({'padding-left': '0', 'margin-left': '0', 'background': 'none'});
 });

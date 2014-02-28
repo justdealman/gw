@@ -1279,38 +1279,34 @@ div.title ul li a:hover {
 	margin:0 auto 14px;
 }
 .news  > div {
-	margin:0 0 28px;
+	margin:-23px auto 28px;
+	background:url('./images/news_bg.png') no-repeat center top;
 }
 .news  > div > div {
-	padding:0 0 21px;
-	margin:0 0 23px;
-	background:url('./images/shadow_bg.png') no-repeat center bottom;
-}
-.news  > div > div > div {
 	clear:both;
 	overflow:hidden;
 	width:960px;
 	margin:0 auto;
 }
-.news  > div > div > div > div {
+.news  > div > div  > div {
 	overflow:hidden;
 	float:left;
 	width:445px;
-	height:133px;
-	padding:18px 0 33px 39px;
+	height:177px;
+	padding:41px 0 10px 39px;
 	margin:0 0 0 31px;
-	background:url('./images/news_div.png') no-repeat left top;
+	background:url('./images/news_div.png') no-repeat left 20px;
 }
-.news  > div > div > div > div:first-child {
+.news  > div > div  > div:nth-child(2n+1) {
 	padding-left:0;
 	margin-left:0;
 	background:none;
 }
-.news  > div > div > div > div img {
+.news  > div > div  > div img {
 	float:left;
 	margin:-5px 0 0;
 }
-.news  > div > div > div > div h6 {
+.news  > div > div  > div h6 {
 	color:#d71921;
 	font-size:11px;
 	line-height:14px;
@@ -1318,16 +1314,18 @@ div.title ul li a:hover {
 	padding:0;
 	margin:0 0 7px 234px;
 }
-.news  > div > div > div > div p {
+.news  > div > div  > div p {
+	overflow:hidden;
 	max-height:100px;
 	font-size:13px;
 	line-height:20px;
 	margin:0 0 0 234px;
 }
-.news  > div > div > div > div p a {
+.news  > div > div  > div p a {
+	display:block;
 	color:#32353a;
 }
-.news  > div > div > div > div p a:hover {
+.news  > div > div  > div p a:hover {
 	text-decoration:underline;
 }
 .news ul {
