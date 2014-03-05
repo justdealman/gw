@@ -144,31 +144,30 @@ button::-moz-focus-inner {
 	left:-5px;
 	top:17px;
 }
-.header .phones {
+.header .address {
 	position:absolute;
 	left:-2px;
 	top:70px;
-	width:240px;
-	color:#32353a;
-	font-weight:500;
-	text-align:right;
-	line-height:15px;
-}
-.header .phones p {
-	clear:both;
-	overflow:hidden;
-	margin:0;
-}
-.header .phones p span {
-	float:left;
-	display:block;
+	width:120px;
 	color:#848689;
 	font-size:11px;
+	line-height:15px;
 	font-weight:300;
+	margin:0;
+}
+.header .phones {
+	position:absolute;
+	left:130px;
+	top:70px;
+	width:120px;
+	color:#32353a;
+	line-height:15px;
+	font-weight:500;
+	margin:0;
 }
 .header .nav {
 	position:absolute;
-	left:253px;
+	right:112px;
 	top:28px;
 	margin:0;
 }
@@ -186,10 +185,10 @@ button::-moz-focus-inner {
 .header .nav li a:hover {
 	text-decoration:underline;
 }
-.header .irito {
+.header .automagistral {
 	position:absolute;
 	right:0;
-	top:26px;
+	top:23px;
 }
 .header > .menu {
 	position:absolute;
@@ -1365,6 +1364,71 @@ div.title ul li a:hover {
 .news ul li:last-child a {
 	color:#9c9da0;
 }
+.form {
+	width:965px;
+	padding:0 0 0 5px;
+	margin:35px auto 35px;
+}
+.form h1 {
+	color:#32353a;
+	font-size:42px;
+	line-height:44px;
+	font-weight:300;
+	padding:0;
+	margin:0 0 42px;
+}
+.form p {
+	width:578px;
+	color:#32353a;
+	font-size:15px;
+	line-height:18px;
+	text-align:right;
+	margin:0 0 15px;
+}
+.form p span {
+	float:left;
+	display:block;
+	width:216px;
+	text-align:left;
+	padding:4px 0 6px;
+}
+.form p input, .form p textarea {
+	position:relative;
+	width:320px;
+	color:#32353a;
+	font-size:13px;
+	padding:4px 7px;
+	border:1px solid #a2a3a6;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	behavior:url('./pie.htc');
+}
+.form p textarea {
+	min-height:67px;
+	margin:0 0 -4px;
+	resize:vertical;
+}
+.form button {
+	position:relative;
+	width:188px;
+	color:#ffffff;
+	font-size:15px;
+	line-height:18px;
+	font-weight:300;
+	text-align:center;
+	cursor:pointer;
+	padding:5px 0 9px;
+	margin:10px 0 15px 242px;
+	background:url('./images/button_bg.png') repeat-x top;
+	-webkit-border-radius:16px;
+	-moz-border-radius:16px;
+	border-radius:16px;
+	behavior:url('./pie.htc');
+}
+.form button:hover {
+	background-position:0 -32px;
+}
 
 /* Footer */
 
@@ -1446,4 +1510,150 @@ div.title ul li a:hover {
 }
 .footer ul .legal {
 	background:url('./images/footer_legal_icon.png') no-repeat 3px 4px;
+}
+.cleear {
+	clear:both;
+	overflow:hidden;
+	height:190px;
+}
+.foooter {
+	position:relative;
+	margin:-190px auto 0;
+	background:#f0f0f0;
+}
+.foooter > div {
+	width:960px;
+	height:190px;
+	font-weight:300;
+	margin:0 auto;
+}
+.foooter > div > div {
+	float:left;
+	max-width:400px;
+	margin:40px 0 0 10px;
+}
+.foooter > div > div h3 {
+	color:#32353a;
+	font-size:16px;
+	line-height:22px;
+	font-weight:300;
+	padding:0;
+	margin:0;
+}
+.foooter > div > div p {
+	color:#9c9da0;
+	font-size:14px;
+	line-height:22px;
+	margin:0;
+}
+.foooter > div > div h5 {
+	color:#32353a;
+	font-size:16px;
+	line-height:22px;
+	font-weight:300;
+	padding:0;
+	margin:22px 0 0;
+}
+.foooter > div > p {
+	float:right;
+	color:#9c9da0;
+	font-size:14px;
+	line-height:22px;
+	margin:128px 10px 0 0;
+}
+.foooter > div > p a {
+	color:#32353a;
+	font-size:16px;
+	text-decoration:underline;
+}
+.foooter > div > p a:hover {
+	text-decoration:none;
+}
+
+/* Modal */
+
+.fade {
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:1000;
+	width:100%;
+	height:100%;
+	cursor:pointer;
+	background:url('./images/fade_bg.png') repeat;
+}
+.modal {
+	display:none;
+	position:fixed;
+	left:50%;
+	top:50%;
+	z-index:1010;
+	width:376px;
+	padding:37px 56px 33px 56px;
+	margin-left:-244px;
+	background:#f0f0f0;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	behavior:url('./pie.htc');
+}
+.modal .close {
+	position:absolute;
+	right:7px;
+	top:7px;
+	display:block;
+	width:13px;
+	height:13px;
+	cursor:pointer;
+	background:url('./images/modal_close.png') no-repeat left top;
+}
+.modal p {
+	color:#32353a;
+	font-size:13px;
+	line-height:18px;
+	text-align:right;
+	margin:0 0 5px;
+}
+.modal p span {
+	float:left;
+	display:block;
+	width:170px;
+	text-align:left;
+	padding:8px 0;
+}
+.modal p input, .modal p textarea {
+	display:inline-block;
+	width:168px;
+	color:#32353a;
+	font-size:13px;
+	padding:7px 10px;
+	background:#ffffff;
+	border-top:1px solid #f6f6f6;
+	border-bottom:1px solid #f6f6f6;
+}
+.modal p textarea {
+	min-height:71px;
+	margin:0 0 -4px;
+	resize:vertical;
+}
+.modal button {
+	position:relative;
+	width:180px;
+	color:#ffffff;
+	font-size:15px;
+	line-height:18px;
+	font-weight:300;
+	text-align:center;
+	cursor:pointer;
+	padding:5px 0 9px;
+	margin:15px 0 5px 188px;
+	background:url('./images/button_bg.png') repeat-x top;
+	-webkit-border-radius:16px;
+	-moz-border-radius:16px;
+	border-radius:16px;
+	behavior:url('./pie.htc');
+}
+.modal button:hover {
+	background-position:0 -32px;
 }

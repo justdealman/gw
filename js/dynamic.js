@@ -72,4 +72,28 @@
 	$('.news ul li:last-child').css({'font-size': '13px', 'margin': '1px 0 0 6px'});
 	$('.news ul li:last-child a').css({'color': '#9c9da0'});
 	$('.news  > div > div  > div:nth-child(2n+1)').css({'padding-left': '0', 'margin-left': '0', 'background': 'none'});
+	$('.modal').append('<span class="close"></div>');
+	$('.modal').each(function() {
+		var mh = Math.floor(($(this).height()+74)/2);
+		$(this).css({'margin-top': -mh+'px'});
+	})
+	$('.header .nav .ask, .header .nav .sign, .header .nav .test').click(function() {
+		var target = $(this).attr('class');
+		$('.modal.'+target).fadeIn(150);
+		$('.fade').fadeIn(150);
+		return false;
+	});
+	$('.modal .close').click(function() {
+		$(this).parent().fadeOut(150);
+		$('.fade').fadeOut(150);
+		return false;
+	});
+	$('.fade').click(function() {
+		$('.fade, .modal').fadeOut(150);
+		return false;
+	});
+	$(this).keydown(function(eventObject){
+		if (eventObject.which == 27)
+		$('.fade, .modal').fadeOut(150);
+	});
 });
