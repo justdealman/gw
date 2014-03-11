@@ -144,6 +144,28 @@ button::-moz-focus-inner {
 	left:-5px;
 	top:17px;
 }
+.header .contacts {
+	position:absolute;
+	left:-2px;
+	top:70px;
+	width:240px;
+	font-size:11px;
+	line-height:15px;
+	font-weight:300;
+}
+.header .contacts p {
+	margin:0;
+}
+.header .contacts p span {
+	float:left;
+	display:block;
+	width:60px;
+}
+.header .contacts strong {
+	color:#32353a;
+	line-height:15px;
+	font-weight:500;
+}
 .header .address {
 	position:absolute;
 	left:-2px;
@@ -1665,7 +1687,7 @@ div.title ul li a:hover {
 
 /* Gridgallery */
 
-.article p {
+.article p, .benefits p {
 	color:#32353a;
 	font-size:15px;
 	line-height:25px;
