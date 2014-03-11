@@ -1180,7 +1180,7 @@ div.title ul li a:hover {
 	text-align:left;
 	cursor:pointer;
 }
-.review .configuration table tbody tr {
+.review .configuration table.dropable tbody tr {
 	display:none;
 }
 .review .configuration table tbody tr:hover td {
