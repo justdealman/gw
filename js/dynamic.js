@@ -96,4 +96,5 @@
 		if (eventObject.which == 27)
 		$('.fade, .modal').fadeOut(150);
 	});
+	$('.gridgallery > div > div a').fancybox();
 });
