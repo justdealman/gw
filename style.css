@@ -1436,6 +1436,30 @@ div.title ul li a:hover {
 	margin:0 0 -4px;
 	resize:vertical;
 }
+.form p {
+	position:relative;
+}
+.form p .error {
+	position:absolute;
+	left:590px;
+	top:4px;
+	width:220px;
+	color:#d71921;
+	font-size:11px;
+	line-height:14px;
+}
+.form p select {
+	position:relative;
+	width:336px;
+	color:#32353a;
+	font-size:13px;
+	padding:4px 3px;
+	border:1px solid #a2a3a6;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	behavior:url('./pie.htc');
+}
 .form button {
 	position:relative;
 	width:188px;
@@ -1730,4 +1754,62 @@ div.title ul li a:hover {
 	max-width:150px;
 	max-height:120px;
 	margin:auto;
+}
+
+.bannerlist {
+	clear:both;
+	overflow:hidden;
+	width:976px;
+	margin:0 auto 50px;
+}
+.bannerlist > div {
+	position:relative;
+	float:left;
+	width:238px;
+	height:175px;
+	margin:0 8px 8px 0;
+}
+.bannerlist > div:nth-child(4n+4) {
+	margin-right:0;
+}
+.bannerlist > div img {
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	max-width:238px;
+	max-height:175px;
+	margin:auto;
+}
+.bannerlist > div a {
+	display:block;
+	width:238px;
+	height:175px;
+	text-decoration:none;
+}
+.bannerlist > div div {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:1;
+	width:238px;
+	text-align:center;
+	padding:3px 0 5px;
+	margin:0;
+	background:url('./images/fade_bg.png') repeat;
+}
+.bannerlist > div div h3 {
+	color:#ffffff;
+	font-size:18px;
+	line-height:21px;
+	padding:0;
+	margin:0 10px;
+}
+.bannerlist > div div p {
+	color:#ffffff;
+	font-size:13px;
+	line-height:16px;
+	font-weight:500;
+	margin:0 10px;
 }
